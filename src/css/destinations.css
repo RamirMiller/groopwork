@@ -1,0 +1,151 @@
+
+body {
+    display: block;
+    background-color: var(--semi-dark-color);
+    color: var(--light-color);
+}
+
+
+.container-destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+}
+.destinations-title {
+    font-weight: 500;
+    font-size: 48px;
+    font-family: Inter;
+    line-height: 48px;
+    letter-spacing: -2%;
+    text-align: center;
+    color: #FBFBFB;
+    margin-bottom: 40px;
+
+}
+.title {
+
+}
+.destinations-title-coment {
+font-family: Inter;
+font-weight: 300;
+font-size: 16px;
+line-height: 140%;
+letter-spacing: 0%;
+text-align: center;
+
+
+}
+.destinations-list {
+display: flex;
+width: 335;
+height: 412;
+border-radius: 24px;
+flex-wrap: nowrap;
+justify-content: space-between;
+
+
+}
+.destinations-item {
+    background-color: var(--light-color);
+    padding: 16px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.destinations-info {
+    padding: 16px;
+    width: 100%;
+}
+.destinations-cruise {
+color: #0E1823;
+font-family: Inter;
+font-weight: 500;
+font-size: 16px;
+line-height: 120%;
+letter-spacing: -4.5%;
+text-transform: uppercase;
+
+}
+.destinations-list-description {
+color: #0E1823;
+font-family: Inter;
+font-weight: 500;
+font-size: 14px;
+line-height: 118%;
+letter-spacing: 3%;
+text-transform: uppercase;
+
+}
+.destinations-list-time {
+color: #0E1823;
+font-family: Inter;
+font-weight: 400;
+font-size: 14px;
+line-height: 118%;
+letter-spacing: 3%;
+
+}
+.caribbean {
+
+}
+.seychelles {
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .caribbean {
+        display: none;
+    }
+    .destinations-title-coment {
+        display: none;
+    }
+}
+@media screen and (max-width: 1279px) {
+    .seychelles {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .container-destinations {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .destinations-list {
+        display: flex;
+        gap: 32px;
+    }
+
+    
+
+    .destinations-title {
+        max-width: 704px;
+        margin-bottom: 50px;
+        font-size: 48px;
+        text-indent: 6px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .destinations-list {
+        gap: 25px;
+    }
+
+    .destinations-title {
+        max-width: 538px;
+        margin-bottom: 24px;
+        font-size: 48px;
+        text-indent: 0;
+    }
+}
